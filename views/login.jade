@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	#wrapper
+		h1 Login to Quasar Chat!
+		form#quasar-login
+			input#user_email(type='email', placeholder="Enter your email address", autofocus)
+			input#user_password(type='password', placeholder='Enter your password')
+
+			button#submit_button(type='button') 
+				| Login Now
+
+block scripts
+	script(type='text/javascript', src='/javascripts/login.js')

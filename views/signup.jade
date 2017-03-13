@@ -1,0 +1,23 @@
+extends layout
+
+block content
+	#wrapper
+		h1 Welcome to Quasar Chat
+		form#quasar-signup
+			input#user_email(type='text', placeholder="Enter your email address", autofocus)
+			input#user_name(type='text', placeholder='Enter your username')
+			input#photo_option(type='checkbox') 
+			| Use custom photo 
+			input#photo_input(type='text', placeholder='Url of your photo')
+			input#password_first(type='password', placeholder='Enter your password')
+			input#password_confirm(type='password', placeholder='Re-type password')
+
+			button#submit_button(type='button') 
+				| Submit
+				
+		p.chat-footer 
+			| Already an existing member? 
+			a(href='login') Login
+
+block scripts
+	script(type='text/javascript', src='/javascripts/signup.js')

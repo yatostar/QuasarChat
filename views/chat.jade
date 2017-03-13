@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	.chat-app
+		h1#chat-title Quasar Chat
+
+		.chat-messages
+
+		textarea(placeholder='Type your message')
+
+		.chat-status
+			| Status: 
+			span Idle
+
+block scripts
+	script(src='/javascripts/chat.js')
